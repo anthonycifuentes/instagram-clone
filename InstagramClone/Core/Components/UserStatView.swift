@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct UserStatView: View {
-    var
+    let value: Int
+    let title: String
+    
     var body: some View {
         VStack(alignment: .center) {
-            Text("3")
+            Text("\(value)")
                 .font(.subheadline)
                 .fontWeight(.semibold)
-            Text("Posts")
+            Text(title)
                 .font(.footnote)
         }
     }
@@ -22,6 +24,6 @@ struct UserStatView: View {
 
 struct UserStatView_Previews: PreviewProvider {
     static var previews: some View {
-        UserStatView()
+        UserStatView(value: 3, title: "Posts")
     }
 }
