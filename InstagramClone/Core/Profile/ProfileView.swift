@@ -21,19 +21,18 @@ struct ProfileView: View {
                 // HEADER
                 VStack {
                     // PIC AND STATS
-                    HStack(alignment: .center, spacing: 32) {
+                    HStack(alignment: .center) {
                         Image("profile")
                             .resizable()
                             .scaledToFill()
                             .frame(width: 80, height: 80)
                             .clipShape(Circle())
-                            .padding(.leading)
+                        Spacer()
                         UserStatView(value: 3, title: "Posts")
                         UserStatView(value: 12, title: "Following")
                         UserStatView(value: 24, title: "Followers")
-                        Spacer()
                     }
-                    
+                    .padding(.horizontal, 16)
                     // BIO
                     VStack(alignment: .leading)  {
                         Text("Sophia Williams")
