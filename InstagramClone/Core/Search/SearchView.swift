@@ -13,8 +13,8 @@ struct SearchView: View {
         NavigationStack {
             ScrollView {
                 LazyVStack (spacing: 12) {
-                    ForEach(0 ... 10, id: \.self) { user in
-                        UserItemView()
+                    ForEach(User.MOCK_USERS) { user in
+                        UserItemView(user: user)
                     }
                 }
                 .searchable(text: $searchText, prompt: "Search...")
