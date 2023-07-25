@@ -26,6 +26,7 @@
 		1F681DB02A5DFF2400F82CA5 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F681DAF2A5DFF2400F82CA5 /* CreatePasswordView.swift */; };
 		1F681DB22A5E020700F82CA5 /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F681DB12A5E020700F82CA5 /* CompleteSignUpView.swift */; };
 		1FCEED8D2A6FA4CB0062EECD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEED8C2A6FA4CB0062EECD /* User.swift */; };
+		1FCEED8F2A6FAEB70062EECD /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEED8E2A6FAEB70062EECD /* CurrentUserProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		1F681DAF2A5DFF2400F82CA5 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		1F681DB12A5E020700F82CA5 /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
 		1FCEED8C2A6FA4CB0062EECD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1FCEED8E2A6FAEB70062EECD /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				1F0AC2C02A501573002A6F96 /* ProfileView.swift */,
+				1FCEED8E2A6FAEB70062EECD /* CurrentUserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				1F681DB22A5E020700F82CA5 /* CompleteSignUpView.swift in Sources */,
 				1F681DAE2A5DFEB100F82CA5 /* CreateUsernameView.swift in Sources */,
 				1F681DAC2A5DF7C500F82CA5 /* SignUpView.swift in Sources */,
+				1FCEED8F2A6FAEB70062EECD /* CurrentUserProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,16 +1,13 @@
 //
-//  ProfileView.swift
+//  CurrentUserProfileView.swift
 //  InstagramClone
 //
-//  Created by Anthony Cifuentes on 1/07/23.
+//  Created by Anthony Cifuentes on 25/07/23.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
-    
-    let user: User
-    
+struct CurrentUserProfileView: View {
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1),
@@ -18,13 +15,13 @@ struct ProfileView: View {
     ]
     
     var body: some View {
-
+        NavigationStack {
             ScrollView {
                 // HEADER
                 VStack {
                     // PIC AND STATS
                     HStack(alignment: .center) {
-                        Image(user.profileImageUrl ?? "default")
+                        Image("profile")
                             .resizable()
                             .scaledToFill()
                             .frame(width: 80, height: 80)
@@ -37,16 +34,11 @@ struct ProfileView: View {
                     .padding(.horizontal, 16)
                     // BIO
                     VStack(alignment: .leading)  {
-                        if let fullname = user.fullname {
-                            Text(fullname)
-                                .font(.footnote)
-                                .fontWeight(.semibold)
-                        }
-                        if let bio = user.bio {
-                            Text(bio)
-                                .font(.footnote)
-                        }
-                        
+                        Text("Sophia Williams")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                        Text("Think Different")
+                            .font(.footnote)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal)
@@ -80,23 +72,24 @@ struct ProfileView: View {
                     }
                 }
             }
-            .navigationTitle(user.username)
+            .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button {
                         
                     } label: {
-                        Image(systemName: "ellipsis")
+                        Image(systemName: "line.3.horizontal")
                             .foregroundColor(.black)
                     }
                 }
             }
         }
+    }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct CurrentUserProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(user: User.MOCK_USERS[0])
+        CurrentUserProfileView()
     }
 }
